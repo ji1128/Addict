@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A'ddict 에이딕트</title>
+    <!-- 파비콘 설정 -->
+    <link rel="icon" href="favicon.png">
+
+    <!-- 브라우저 초기화 reset -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/the-new-css-reset@1.5.1/css/reset.min.css">
+    <!-- 폰트 -->
+    <link rel="stylesheet" href="https://use.typekit.net/fhr4ovo.css">
+    <!-- Goggle Material icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- scroll Magic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+        integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- javascript -->
+    <script defer src="js/index.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="inner">
+                <h1><a href="/">
+                        <img src="images/icon/A’ddict-logo.png" alt="A'ddict" class="logo-white">
+                        <img src="images/icon/A’ddict-logo-black.png" alt="A'ddict" class="logo-black">
+                    </a></h1>
+
+                <!-- PC -->
+                <nav id="gnb-pc">
+                    <ul class="main-menu">
+                        <!-- 1차메뉴 -->
+                        <li class="item">
+                            <div class="item__name"><a href="javascript:void(0)">SHOP</a></div>
+                            <!-- width 100% 투명한 배경 -->
+                            <div class="item__contents">
+                                <!-- 1200px 배경 가운데 배치 -->
+                                <div class="item__contents-bg">
+                                    <!-- 2차메뉴 사진 배치 -->
+                                    <div class="contents__img">
+                                        <!-- <img src="images/img/menu-img.png" alt="menu-img"> -->
+                                        <img src="images/img/menu-img-2.png" alt="menu-img">
+                                    </div>
+                                    <!-- 2차 메뉴 배치 상자 -->
+                                    <div class="contents__menu">
+                                        <!--2차메뉴 -->
+                                        <ul class="menu__inner">
+                                            <!-- ul을 상자 왼쪽 끝에 배치 -->
+                                            <li><a href="javascript:void(0)">ALL</a></li>
+                                            <li><a href="javascript:void(0)">Best</a></li>
+                                            <li><a href="javascript:void(0)">Perfume</a></li>
+                                            <li><a href="javascript:void(0)">Home Fragrance</a></li>
+                                            <li><a href="javascript:void(0)">Acc</a></li>
+                                            <li><a href="javascript:void(0)">Set</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="item__name"><a href="javascript:void(0)">SCENT</a></div>
+                        </li>
+                        <li class="item">
+                            <div class="item__name"><a href="javascript:void(0)">BRAND</a></div>
+                        </li>
+                        <li class="item">
+                            <div class="item__name"><a href="javascript:void(0)">EVENT</a></div>
+                        </li>
+                        <li class="item">
+                            <div class="item__name"><a href="javascript:void(0)">CUSTOMER</a></div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sub-menu">
+                <a href="#">LOGIN</a>
+                <a href="#">CART</a>
+                <div class="search">
+                    <a href="javascript:void(0)">
+                        <img src="images/icon/search.png" alt="search" class="seacrch-icon">
+                        <img src="images/icon/search-black.png" alt="search" class="seacrch-icon-black">
+                    </a>
+                </div>
+            </div>
+
+            <!-- MO -->
+            <nav id="gnb-mo">
+                <div class="search">
+                    <input id="search-search" type="search" name="q" aria-label="Search through site content">
+                    <button><a href="javascript:void(0)"><img src="images/icon/search-mo.png" alt="search"></a></button>
+                </div>
+                <ul class="mainMenu">
+                    <!-- 1차메뉴 (:target 사용) -->
+                    <li class="item" id="shop">
+                        <a href="javascript:void(0)" class="nav-btn">SHOP</a>
+                        <!-- 2차메뉴 -->
+                        <ul class="subMenu">
+                            <li><a href="javascript:void(0)">ALL</a></li>
+                            <li><a href="javascript:void(0)">Best</a></li>
+                            <li><a href="javascript:void(0)">Perfume</a></li>
+                            <li><a href="javascript:void(0)">Home Fragrance</a></li>
+                            <li><a href="javascript:void(0)">Acc</a></li>
+                            <li><a href="javascript:void(0)">Set</a></li>
+                        </ul>
+                    </li>
+                    <li class="item" id="scent">
+                        <a href="javascript:void(0)">SCENT</a>
+                    </li>
+                    <li class="item" id="brand">
+                        <a href="javascript:void(0)">BRAND</a>
+                    </li>
+                    <li class="item" id="event">
+                        <a href="javascript:void(0)">EVENT</a>
+                    </li>
+                    <li class="item" id="customer">
+                        <a href="javascript:void(0)">CUSTOMER</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- menu-toggle-btn -->
+            <div class="menu-toggle-btn">
+                <div id="one"></div>
+                <div id="two"></div>
+                <div id="three"></div>
+                <span id="square"></span>
+            </div>
+
+            <div class="shopping-icon">
+                <a href="javascript:void(0)"><span class="material-icons">shopping_cart</span></a>
+            </div>
+        </header>
+
+        <!-- main-slider -->
+        <section class="main-slider">
+            <h2 class="hidden">swiper slider</h2>
+
+            <!-- Slider main container -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="images/img/slide01-1.jpg" alt="slide"></a>
+                        <div class="slide__text">
+                            <p>에탄올이 없어 본래 내 '살냄새'처럼 은은하게</p>
+                            <p>WHAT EXISTS IS<br>THE SCENT OF THE SOUL.</p>
+                            <P>Solid Perfume</P>
+                            <a href="javascript:void(0)" class="btn-swiper">DETAIL VIEW</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="images/img/slide02-1.jpg" alt="slide"></a>
+                        <div class="slide__text">
+                            <p>에탄올이 아닌 '워터베이스'로 자극없이 은은한</p>
+                            <p>WHAT EXISTS IS<br>THE SCENT OF THE SOUL.</p>
+                            <P>Lau de Parfume</P>
+                            <a href="javascript:void(0)" class="btn-swiper">DETAIL VIEW</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="images/img/slide03-1.jpg" alt="slide"></a>
+                        <div class="slide__text">
+                            <p>레이어링 퍼퓸 세트</p>
+                            <p>A'DDICT LAYERING<br>
+                                PERFUME SET</p>
+                            <P class="text-present">나와 내 소중한 사람을 위해<br>
+                                감각적인 무드와 향에 마음을 담아 선물해드려요.</P>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="images/img/slide04-1.jpg" alt="slide"></a>
+                        <div class="slide__text">
+                            <p>뿌리는 순간 감각적인 무드를 연출해주는</p>
+                            <p>WHAT EXISTS IS<br>THE SCENT OF THE SOUL.</p>
+                            <P>Room Spray</P>
+                            <a href="javascript:void(0)" class="btn-swiper">DETAIL VIEW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-prev"></div>
+            <div class="swiper-next"></div>
+
+        </section>
+
+        <!-- brand-text -->
+        <section class="brand-text">
+            <div class="inner">
+                <img src="images/img/txt-mo.png" alt="brand" class="brand-text-mo">
+                <img src="images/img/txt-pc.png" alt="brand" class="brand-text-pc">
+                <a href="javascript:void(0)" class="btn">VIEW MORE</a>
+            </div>
+        </section>
+
+
+        <!-- BEST-ITEMS -->
+        <section class="best-item scroll-spy">
+            <div class="item-bg back-to-position to-up delay-0">
+                <h2>
+                    <img src="images/items/best item-txt-mo.png" alt="best-items" class="item-h2-mo">
+                    <img src="images/items/best item-txt-pc.png" alt="best-items" class="item-h2-pc">
+                </h2>
+
+                <div class="best-item__inner">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0)">
+                                    <div class="best-item-box">
+                                        <img src="images/items/best-item01.png" alt="items">
+                                    </div>
+                                    <div class="best-item-txt">
+                                        <p>네이키드 머스크 103</p>
+                                        <p>Solid Perfume</p>
+                                        <p>34,000원</p>
+                                        <a href="javascript:void(0)" class="btn btn--item">ADD TO CART</a>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0)">
+                                    <div class="best-item-box">
+                                        <img src="images/items/best-item02.png" alt="items">
+                                    </div>
+                                    <div class="best-item-txt">
+                                        <p>잇 더 피치</p>
+                                        <p>Eau de Parfum</p>
+                                        <p>59,000원</p>
+                                        <a href="javascript:void(0)" class="btn btn--item">ADD TO CART</a>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0)">
+                                    <div class="best-item-box">
+                                        <img src="images/items/best-item03.png" alt="items">
+                                    </div>
+                                    <div class="best-item-txt">
+                                        <p>솔리드 퍼퓸 트라이 키트</p>
+                                        <p>Solid Perfume</p>
+                                        <p>2,000원</p>
+                                        <a href="javascript:void(0)" class="btn btn--item">ADD TO CART</a>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0)">
+                                    <div class="best-item-box">
+                                        <img src="images/items/best-item04.png" alt="items">
+                                    </div>
+                                    <div class="best-item-txt">
+                                        <p>네이키드 샌달우드</p>
+                                        <p>Solid Perfume</p>
+                                        <p>34,000원</p>
+                                        <a href="javascript:void(0)" class="btn btn--item">ADD TO CART</a>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0)">
+                                    <div class="best-item-box">
+                                        <img src="images/items/best-item05.png" alt="items">
+                                    </div>
+                                    <div class="best-item-txt">
+                                        <p>보이드 우드</p>
+                                        <p>Eau de Parfum</p>
+                                        <p>59,000원</p>
+                                        <a href="javascript:void(0)" class="btn btn--item">ADD TO CART</a>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0)">
+                                    <div class="best-item-box">
+                                        <img src="images/items/best-item06.png" alt="items">
+                                    </div>
+                                    <div class="best-item-txt">
+                                        <p>히노키 207</p>
+                                        <p>Room Spray</p>
+                                        <p>32,000원</p>
+                                        <a href="javascript:void(0)" class="btn btn--item">ADD TO CART</a>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0)">
+                                    <div class="best-item-box">
+                                        <img src="images/items/best-item07.png" alt="items">
+                                    </div>
+                                    <div class="best-item-txt">
+                                        <p>레이어링 퍼퓸 세트</p>
+                                        <p>　</p>
+                                        <p>93,000원</p>
+                                        <a href="javascript:void(0)" class="btn btn--item">ADD TO CART</a>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-prev"></div>
+                    <div class="swiper-next"></div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fixed -->
+        <section class="fixed scroll-spy">
+            <h2 class="hidden">fixed</h2>
+            <div class="inner">
+                <img src="images/img/fixed-txt-mo.png" alt="fixed" class="fixed-img-mo back-to-position to-up delay-0">
+                <a href="javascript:void(0)" class="btn btn--white back-to-position to-up delay-1">VIEW MORE</a>
+                <img src="images/img/fixed-txt.png" alt="fixed" class="fixed-img-pc back-to-position to-up delay-0">
+                <img src="images/img/fixed-note-number.png" alt="number" class="fixed-number back-to-position to-up delay-1">
+            </div>
+        </section>
+
+        <!-- changes-time -->
+        <section class="changes-time scroll-spy">
+            <!-- 1200px 가운데 배치 -->
+            <div class="inner">
+                <h2 class="back-to-position to-up delay-0"><img src="images/items/shop-txt.png" alt="changes over time"></h2>
+                <div class="best-item__inner back-to-position to-up delay-1">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a href="#"><img src="images/items/shop-img01.png" alt="all"></a>
+                            </div>
+                            <div class="swiper-slide"><a href="#"><img src="images/items/shop-img02.png"
+                                        alt="prefume"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="images/items/shop-img03.png"
+                                        alt="solid perfumes"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="images/items/shop-img04.png"
+                                        alt="home fragrance"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="images/items/shop-img05.png" alt="acc"></a>
+                            </div>
+                            <div class="swiper-slide"><a href="#"><img src="images/items/shop-img06.png" alt="set"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- product -->
+        <section class="product scroll-spy">
+            <h2 class="hidden">product</h2>
+            <!-- 1200px 가운데 배치& flex -->
+            <div class="inner back-to-position to-up">
+                <div class="line1">
+                    <hr>
+                </div>
+                <!-- order 설정 -->
+                <div class="product__box product__img box1">
+                    <img src="images/img/product01.png" alt="product">
+                </div>
+                <div class="product__box box__txt box2">
+                    <div class="product-box__txt">
+                        <p>Eat the peach</p>
+                        <p>잇 더 피치</p>
+                        <p>복숭아의 청아한 수분감에서,<br>
+                            시간이 갈수록 은은한 우드 향취가 뒤섞여<br>
+                            사랑에 빠져 발갛게 달아오른 두 뺨을 연상시킵니다.</p>
+                        <a href="javascript:void(0)" class="btn product-btn">DISCOVER OUR PERFUMES</a>
+                    </div>
+                </div>
+                <div class="product__box product__img box3">
+                    <img src="images/img/product02.png" alt="product">
+                </div>
+                <div class="product__box box__txt box4">
+                    <div class="product-box__txt">
+                        <p>Before Sunset</p>
+                        <p>비포 선셋</p>
+                        <p>해 지기 전 노을이 가장 아름답게 빛나는,<br>
+                            강렬하면서도 황홀한 황혼의 순간을 떠오르게 합니다.<br>
+                            톡 쏘는 시트러스가 네롤리와 만나<br>
+                            해변에서 칵테일을 마시는 듯한 기분을<br>
+                            마지막까지 남은 머스크는<br>
+                            그때 그 무드를 깊이 간직하게 합니다.</p>
+                        <a href="javascript:void(0)" class="btn product-btn">DISCOVER OUR PERFUMES</a>
+                    </div>
+                </div>
+                <div class="product__box product__img box5">
+                    <img src="images/img/product03.png" alt="product">
+                </div>
+                <div class="product__box box__txt box6">
+                    <div class="product-box__txt">
+                        <p>Void wood</p>
+                        <p>보이드 우드</p>
+                        <p>웅장한 숲 속, 푸릇한 잎들이 가득 우거진 나무들 사이로<br>
+                            부는 바람이 그윽한 우드의 향취를 느끼게 합니다.<br>
+                            처음 맡았을 때 느껴지는 짙은 초록잎의 향,<br>
+                            그리고 마지막의 스모키한 흙내음을 통해<br>
+                            자연에서 느끼는 안식을 불러옵니다.</p>
+                        <a href="javascript:void(0)" class="btn product-btn">DISCOVER OUR PERFUMES</a>
+                    </div>
+                </div>
+                <div class="line2">
+                    <hr>
+                </div>
+            </div>
+        </section>
+
+        <!-- sns -->
+        <section class="sns scroll-spy">
+            <!-- 1200px inner 박스 -->
+            <div class="inner">
+                <h2 class="back-to-position to-up delay-0">
+                    <img src="images/SNS/sns-txt-mo.png" alt="follow us on instagram" class="sns-txt-mo">
+                    <img src="images/SNS/sns-txt.png" alt="follow us on instagram" class="sns-txt-pc">
+                </h2>
+                <!-- sns 배경 박스 -->
+                <div class="sns-bg back-to-position to-up delay-1">
+                    <!-- sns 사진 박스 -->
+                    <div class="sns__box">
+                        <!-- sns img & 버튼 -->
+                        <div class="sns-box__cont">
+                            <img src="images/SNS/SNS01.png" alt="sns">
+                            <img src="images/SNS/SNS-hover.png" alt="opacity-bg">
+                            <img src="images/SNS/SNS-Instagram.png" alt="instagram">
+                            <a href="javascript:void(0)" class="btn btn--sns">Show now</a>
+                        </div>
+                        <div class="sns-box__cont">
+                            <img src="images/SNS/SNS02.png" alt="sns">
+                            <img src="images/SNS/SNS-hover.png" alt="opacity-bg">
+                            <img src="images/SNS/SNS-Instagram.png" alt="instagram">
+                            <a href="javascript:void(0)" class="btn btn--sns">Show now</a>
+                        </div>
+                        <div class="sns-box__cont">
+                            <img src="images/SNS/SNS03.png" alt="sns">
+                            <img src="images/SNS/SNS-hover.png" alt="opacity-bg">
+                            <img src="images/SNS/SNS-Instagram.png" alt="instagram">
+                            <a href="javascript:void(0)" class="btn btn--sns">Show now</a>
+                        </div>
+                        <div class="sns-box__cont">
+                            <img src="images/SNS/SNS04.png" alt="sns">
+                            <img src="images/SNS/SNS-hover.png" alt="opacity-bg">
+                            <img src="images/SNS/SNS-Instagram.png" alt="instagram">
+                            <a href="javascript:void(0)" class="btn btn--sns">Show now</a>
+                        </div>
+                        <div class="sns-box__cont">
+                            <img src="images/SNS/SNS05.png" alt="sns">
+                            <img src="images/SNS/SNS-hover.png" alt="opacity-bg">
+                            <img src="images/SNS/SNS-Instagram.png" alt="instagram">
+                            <a href="javascript:void(0)" class="btn btn--sns">Show now</a>
+                        </div>
+                        <div class="sns-box__cont">
+                            <img src="images/SNS/SNS06.png" alt="sns">
+                            <img src="images/SNS/SNS-hover.png" alt="opacity-bg">
+                            <img src="images/SNS/SNS-Instagram.png" alt="instagram">
+                            <a href="javascript:void(0)" class="btn btn--sns">Show now</a>
+                        </div>
+                        <!-- pc 에서만 보일 이미지 -->
+                        <div class="sns-box__cont sns-cont-pc">
+                            <img src="images/SNS/SNS07.png" alt="sns">
+                            <img src="images/SNS/SNS-hover.png" alt="opacity-bg">
+                            <img src="images/SNS/SNS-Instagram.png" alt="instagram">
+                            <a href="javascript:void(0)" class="btn btn--sns">Show now</a>
+                        </div>
+                        <div class="sns-box__cont sns-cont-pc">
+                            <img src="images/SNS/SNS08.png" alt="sns">
+                            <img src="images/SNS/SNS-hover.png" alt="opacity-bg">
+                            <img src="images/SNS/SNS-Instagram.png" alt="instagram">
+                            <a href="javascript:void(0)" class="btn btn--sns">Show now</a>
+                        </div>
+                        <div class="sns-box__cont sns-cont-pc">
+                            <img src="images/SNS/SNS09.png" alt="sns">
+                            <img src="images/SNS/SNS-hover.png" alt="opacity-bg">
+                            <img src="images/SNS/SNS-Instagram.png" alt="instagram">
+                            <a href="javascript:void(0)" class="btn btn--sns">Show now</a>
+                        </div>
+                        <div class="sns-box__cont sns-cont-pc">
+                            <img src="images/SNS/SNS10.png" alt="sns">
+                            <img src="images/SNS/SNS-hover.png" alt="opacity-bg">
+                            <img src="images/SNS/SNS-Instagram.png" alt="instagram1">
+                            <a href="javascript:void(0)" class="btn btn--sns">Show now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- bottom-nav -->
+        <section class="bottom-nav">
+            <h2 class="hidden">bottom-nav</h2>
+            <!-- 1200px 가운데 정렬 -->
+            <div class="inner">
+                <nav>
+                    <ul>
+                        <li><a href="javascript:void(0)">사업자정보확인</a></li>
+                        <li><a href="javascript:void(0)">이용안내</a></li>
+                        <li><a href="javascript:void(0)">이용약관</a></li>
+                        <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <div class="inner">
+                <div class="footer-logo">
+                    <h2><img src="images/icon/footer-logo.png" alt="A'ddict-footer"></h2>
+                </div>
+
+                <div class="footer-txt">
+                    <p class="footer-txt-pc">마케팅 제휴 문의 : addict@addict.co.kr · 입점 및 해외 수출 문의 : global@11corp.co.kr</p>
+                    <p>주식회사 일레븐 코퍼레이션 · CEO 백창준<br>
+                        서울특별시 강남구 도산대로 145 (인우빌딩), 3층 303호 대표번호 1661-8148</p>
+                    <p>사업자등록번호 875-86-00859 · 통신판매신고번호 2018-서울강남-00386</p>
+                    <p>Copyright ⓒ a-ddict All Rights Reserved.</p>
+                </div>
+
+                <div class="footer-sns-icon">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)"><img src="images/icon/Facebook.png" alt="Facebook"></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><img src="images/icon/Instagram.png" alt="Instagram"></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><img src="images/icon/YouTube.png" alt="YouTube"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
