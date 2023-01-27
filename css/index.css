@@ -992,7 +992,7 @@ footer{
         position: fixed;
         top: 0;
         z-index: 10;
-        transition: all 0.4s ease-in-out;
+        /* transition: all 0.4s ease-in-out; */
     }
     header:hover{
         background: rgba(255, 255, 255, 0.8);
@@ -1014,7 +1014,7 @@ footer{
         width: 115px;
         height: 30px;
         padding: 0;
-        transition: all 0.4s ease-in-out;
+        /* transition: all 0.4s ease-in-out; */
     }
     /* hover하면 logo-black 으로 바꾸기 */
     header:hover h1 img.logo-white{display: none;}
@@ -1037,7 +1037,7 @@ footer{
         /* 폰트 크기 */
         font-size: 15px;
         font-weight: 200;
-        transition: all 0.4s ease-in-out;
+        /* transition: all 0.3s ease-in-out; */
     }
     header:hover .sub-menu a{color: #000;}
     header .sub-menu a:hover{
@@ -1048,7 +1048,7 @@ footer{
         height: 25px;
         margin-top: -3px;
     }
-    header .sub-menu .search img{transition: all 0.4s ease-in-out;}
+    /* header .sub-menu .search img{transition: all 0.4s ease-in-out;} */
     header .sub-menu .search .seacrch-icon-black{display: none;}
     header:hover .sub-menu .search .seacrch-icon-black{display: block;}
     header:hover .sub-menu .search .seacrch-icon{display: none;}
@@ -1077,7 +1077,7 @@ footer{
         color: #fff;
         font-weight: 200;
         font-size: 15px; /*1차메뉴 글자 폰트 크기*/
-        transition: all 0.4s ease-in-out;
+        transition: none;
     }
     header:hover #gnb-pc .main-menu .item__name a{color: #000;}
     #gnb-pc .main-menu a{
