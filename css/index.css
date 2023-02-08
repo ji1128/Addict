@@ -60,7 +60,7 @@ img{display: block;}
 .hidden{display: none;}
 
 /* ------btn */
-a.btn{
+.btn{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,38 +71,38 @@ a.btn{
     
     transition: all 0.3s ease-in-out;
 }
-a.btn:hover{
+.btn:hover{
     background: #333;
     color: #fff;
 }
-a.btn.btn--item{
+.btn.btn--item{
     width: 160px;
     height: 40px;
     font-weight: 700;
     border: 1px solid #333;
 }
-a.btn.btn--item:hover{
+.btn.btn--item:hover{
     background: #333;
     color: #fff;
 }
-a.btn.btn--white{
+.btn.btn--white{
     color: #fff;
     border: 1px solid #fff;
     width: 175px;
     height: 48px;
 }
-a.btn.btn--white:hover{
+.btn.btn--white:hover{
     background-color: rgba(255,255,255,0.6);
     color: #333;
 }
 
-a.btn.product-btn{
+.btn.product-btn{
     
     width: 240px;
     height: 52px;
     font-size: 16px;
 }
-a.btn.btn--sns{
+.btn.btn--sns{
     width: 100px;
     height: 30px;
     font-size: 11px;
@@ -311,7 +311,7 @@ header .shopping-icon .material-icons{
     object-fit: contain;
     vertical-align: middle;
 }
-#gnb-mo .search a button img{cursor: pointer;}
+#gnb-mo .search a img{cursor: pointer;}
 
 
 /* ===========MO-slider area=========== */
@@ -511,7 +511,7 @@ header .shopping-icon .material-icons{
 .best-item .swiper-slide a:hover p:first-child{
     text-decoration: underline;
 }
-.best-item a.btn.btn--item{
+.best-item .btn.btn--item{
     margin: auto;
 }
 
