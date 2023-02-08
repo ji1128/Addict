@@ -311,6 +311,7 @@ header .shopping-icon .material-icons{
     object-fit: contain;
     vertical-align: middle;
 }
+#gnb-mo .search a button img{cursor: pointer;}
 
 
 /* ===========MO-slider area=========== */
