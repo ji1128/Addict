@@ -70,6 +70,7 @@ img{display: block;}
     font-size: 13px;
     
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 .btn:hover{
     background: #333;
